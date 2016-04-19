@@ -16,7 +16,7 @@ public class ViewFactory {
     public static ImageView getImageView(Context context, String url) {
         ImageView imageView = (ImageView) LayoutInflater.from(context).inflate(R.layout.view_banner, null);
         //ImageLoader.getInstance().displayImage(url, imageView, getOptions());
-        Glide.with(context).load(url).centerCrop().placeholder(R.mipmap.ic_launcher).into(imageView);
+        Glide.with(context).load(url).centerCrop().placeholder(R.color.white).into(imageView);
         return imageView;
     }
 }
